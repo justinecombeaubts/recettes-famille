@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "name": "Les recettes de maman",
+    "version": "1.0",
+    "last_updated": "2026-05-10",
+    "description": "Base de données JSON des recettes familiales pour un site web local."
+  },
+
+  "categories": [
+    { "id": 1, "name": "Dessert" },
+    { "id": 2, "name": "Plat principal" },
+    { "id": 3, "name": "Entrée" },
+    { "id": 4, "name": "Poisson" },
+    { "id": 5, "name": "Veggie" },
+    { "id": 6, "name": "Fromage" },
+    { "id": 7, "name": "Base" },
+    { "id": 8, "name": "Accompagnement" },
+    { "id": 9, "name": "Apéro" }
+  ],
+
+  "components": [
+    { "id": 1, "name": "Pâte sucrée" },
+    { "id": 2, "name": "Crème au citron" },
+    { "id": 3, "name": "Meringue italienne" }
+  ],
+
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Tarte au citron meringuée maison",
+      "category": "Dessert",
+      "servings": 8,
+      "oven_temperature": "180°C",
+      "cook_time": 40,
+      "image_url": null,
+      "notes": "Tarte au citron meringuée classique (moule 22 cm), crème et meringue italienne maison. Laisse bien refroidir la tarte avant de la découper pour que la garniture se tienne mieux.",
+      "ingredients": [
+        { "name": "Farine", "quantity": 200, "unit": "g", "component_id": 1, "sort_order": 1 },
+        { "name": "Beurre froid", "quantity": 100, "unit": "g", "component_id": 1, "sort_order": 2 },
+        { "name": "Sucre glace", "quantity": 80, "unit": "g", "component_id": 1, "sort_order": 3 },
+        { "name": "Œuf entier", "quantity": 1, "unit": "unité", "component_id": 1, "sort_order": 4 },
+        { "name": "Sel", "quantity": 1, "unit": "pincée", "component_id": 1, "sort_order": 5 },
+        { "name": "Jus de citron", "quantity": 150, "unit": "ml", "component_id": 2, "sort_order": 1 },
+        { "name": "Zeste de citron", "quantity": 1, "unit": "unité", "component_id": 2, "sort_order": 2 },
+        { "name": "Sucre", "quantity": 135, "unit": "g", "component_id": 2, "sort_order": 3 },
+        { "name": "Œufs entiers", "quantity": 3, "unit": "unité", "component_id": 2, "sort_order": 4 },
+        { "name": "Maïzena", "quantity": 22, "unit": "g", "component_id": 2, "sort_order": 5 },
+        { "name": "Beurre", "quantity": 125, "unit": "g", "component_id": 2, "sort_order": 6 },
+        { "name": "Blancs d’œufs", "quantity": 100, "unit": "g", "component_id": 3, "sort_order": 1 },
+        { "name": "Sucre", "quantity": 200, "unit": "g", "component_id": 3, "sort_order": 2 },
+        { "name": "Eau", "quantity": 70, "unit": "g", "component_id": 3, "sort_order": 3 }
+      ],
+      "steps": [
+        { "step_number": 1, "instruction": "Mélange la farine, le sucre glace et le sel dans un saladier.", "component_id": 1 },
+        { "step_number": 2, "instruction": "Ajoute le beurre puis sable le mélange du bout des doigts.", "component_id": 1 },
+        { "step_number": 3, "instruction": "Ajoute l’œuf, mélange jusqu’à obtenir une boule homogène.", "component_id": 1 },
+        { "step_number": 4, "instruction": "Laisse reposer au frais minimum 30 min.", "component_id": 1 },
+        { "step_number": 5, "instruction": "Étale la pâte, fonce le moule de 22 cm. Pique-la à la fourchette.", "component_id": 1 },
+        { "step_number": 6, "instruction": "Précuis la pâte à blanc 20 min à 180°C, avec papier cuisson et billes.", "component_id": 1 },
+        { "step_number": 1, "instruction": "Râpe le zeste d’un citron et presse 4 citrons (150 ml).", "component_id": 2 },
+        { "step_number": 2, "instruction": "Mélange dans une casserole le jus, les zestes, le sucre, la maïzena.", "component_id": 2 },
+        { "step_number": 3, "instruction": "Ajoute les œufs, fouette bien.", "component_id": 2 },
+        { "step_number": 4, "instruction": "Fais chauffer à feu doux en mélangeant jusqu’à épaississement.", "component_id": 2 },
+        { "step_number": 5, "instruction": "Hors du feu, incorpore le beurre froid en dés. Mélange.", "component_id": 2 },
+        { "step_number": 6, "instruction": "Verse sur le fond de tarte refroidi.", "component_id": 2 },
+        { "step_number": 1, "instruction": "Commence à battre les blancs en neige.", "component_id": 3 },
+        { "step_number": 2, "instruction": "Fais chauffer l’eau et le sucre à 118°C.", "component_id": 3 },
+        { "step_number": 3, "instruction": "Verse le sirop en filet sur les blancs sans cesser de fouetter jusqu’à refroidissement.", "component_id": 3 },
+        { "step_number": 4, "instruction": "Dispose la meringue sur la tarte avec une poche à douille ou spatule.", "component_id": 3 },
+        { "step_number": 5, "instruction": "Caramélise au chalumeau, ou passe sous le grill.", "component_id": 3 }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Poulet rôti et galettes de légumes",
+      "category": "Plat principal",
+      "servings": 6,
+      "oven_temperature": "190°C",
+      "cook_time": 50,
+      "image_url": "20250804_082600.jpg",
+      "notes": "L’appareil ne doit pas être trop liquide, sinon les galettes ne se formeront pas. Bien essorer les courgettes et les carottes. Si besoin, ajouter du parmesan ou un peu de farine.",
+      "ingredients": [
+        { "name": "Gros poulet", "quantity": 1, "unit": null, "component_id": null, "sort_order": 1 },
+        { "name": "Courgettes", "quantity": 2, "unit": null, "component_id": null, "sort_order": 2 },
+        { "name": "Carottes", "quantity": 2, "unit": null, "component_id": null, "sort_order": 3 },
+        { "name": "Cébette", "quantity": 4, "unit": null, "component_id": null, "sort_order": 4 },
+        { "name": "Grosse tête d’ail", "quantity": 1, "unit": null, "component_id": null, "sort_order": 5 },
+        { "name": "Thym frais", "quantity": null, "unit": null, "component_id": null, "sort_order": 6 },
+        { "name": "Œuf", "quantity": 1, "unit": null, "component_id": null, "sort_order": 7 },
+        { "name": "Parmesan râpé", "quantity": 70, "unit": "g", "component_id": null, "sort_order": 8 },
+        { "name": "Beurre", "quantity": null, "unit": null, "component_id": null, "sort_order": 9 },
+        { "name": "Maïs en conserve égoutté", "quantity": null, "unit": null, "component_id": null, "sort_order": 10 },
+        { "name": "Farine", "quantity": 2, "unit": "c. à soupe", "component_id": null, "sort_order": 11 },
+        { "name": "Huile d’olive", "quantity": null, "unit": null, "component_id": null, "sort_order": 12 },
+        { "name": "Sel", "quantity": null, "unit": null, "component_id": null, "sort_order": 13 },
+        { "name": "Poivre", "quantity": null, "unit": null, "component_id": null, "sort_order": 14 }
+      ],
+      "steps": [
+        { "step_number": 1, "instruction": "Préchauffez le four à 190°C.", "component_id": null },
+        { "step_number": 2, "instruction": "Placez le poulet dans un plat, ajoutez du beurre en parcelles, les gousses d’ail en chemise et de l’huile d’olive. Incisez la peau du poulet et glissez des petits morceaux de beurre sous la peau. Ajoutez le thym et salez la viande de poulet. Versez une petite louche d’eau dans le plat et enfournez pour 50 minutes en retournant le poulet à mi-cuisson et en l’arrosant régulièrement.", "component_id": null },
+        { "step_number": 3, "instruction": "Lavez et essuyez tous les légumes. Râpez les courgettes et les carottes, émincez les cébettes. Dans un saladier, pressez ensemble les courgettes et les carottes pour retirer un maximum d’eau. Mélangez-les aux cébettes, à l’œuf, au maïs, au parmesan râpé et à la farine. Salez et poivrez.", "component_id": null },
+        { "step_number": 4, "instruction": "Formez 12 galettes puis faites-les cuire sur feu doux dans une poêle huilée 3 minutes de chaque côté. Laissez-les sur du papier absorbant.", "component_id": null },
+        { "step_number": 5, "instruction": "Ôtez l’ail de la poêle et réservez-le dans un petit morceau de papier aluminium.", "component_id": null },
+        { "step_number": 6, "instruction": "Servez les galettes avec le poulet rôti et les gousses d’ail en chemise confit.", "component_id": null }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Clafoutis de rouleaux de courgette au saumon fumé",
+      "category": "Entrée",
+      "servings": 6,
+      "oven_temperature": "180°C",
+      "cook_time": 25,
+      "image_url": "20250804_082621.jpg",
+      "notes": "Pour une version plus économique, remplacez le saumon par de la truite fumée. Variante notée dans la recette. Sur l’image, environ 48 pièces.",
+      "ingredients": [
+        { "name": "Saumon fumé", "quantity": 200, "unit": "g", "component_id": null, "sort_order": 1 },
+        { "name": "Courgettes", "quantity": 2.5, "unit": null, "component_id": null, "sort_order": 2 },
+        { "name": "Citron vert non traité (zeste)", "quantity": 1, "unit": null, "component_id": null, "sort_order": 3 },
+        { "name": "Œuf", "quantity": 1, "unit": null, "component_id": null, "sort_order": 4 },
+        { "name": "Brousse", "quantity": 500, "unit": "g", "component_id": null, "sort_order": 5 },
+        { "name": "Crème liquide", "quantity": 20, "unit": "cl", "component_id": null, "sort_order": 6 },
+        { "name": "Fromage blanc", "quantity": 2, "unit": "c. à soupe", "component_id": null, "sort_order": 7 },
+        { "name": "Farine", "quantity": 40, "unit": "g", "component_id": null, "sort_order": 8 },
+        { "name": "Mélange 5 baies", "quantity": 1, "unit": "café", "component_id": null, "sort_order": 9 },
+        { "name": "Poivre", "quantity": null, "unit": null, "component_id": null, "sort_order": 10 },
+        { "name": "Ciboulette", "quantity": null, "unit": null, "component_id": null, "sort_order": 11 }
+      ],
+      "steps": [
+        { "step_number": 1, "instruction": "Écrasez à la fourchette, dans un bol, la brousse avec la ciboulette ciselée, le zeste du citron vert, le poivre et le mélange 5 baies. Réservez au frais.", "component_id": null },
+        { "step_number": 2, "instruction": "Rincez les courgettes et coupez-les dans le sens de la longueur en bandes à l’aide d’un épluche-légumes ou une mandoline. Déposez les bandes à plat et recouvrez-les du mélange brousse. Ajoutez des morceaux de saumon. Formez des rouleaux et déposez-les au fur et à mesure dans le plat à clafoutis.", "component_id": null },
+        { "step_number": 3, "instruction": "Préchauffez le four à 180°C. Préparez l’appareil : fouettez la crème, l’œuf, le fromage blanc, la farine et la cuillère de farine. Versez sur les rouleaux.", "component_id": null },
+        { "step_number": 4, "instruction": "Enfournez pour 25 minutes. Si le clafoutis n’est pas figé, laissez cuire 5 minutes supplémentaires.", "component_id": null }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Clafoutis aux courgettes et au thon",
+      "category": "Plat principal",
+      "servings": 6,
+      "oven_temperature": "180°C",
+      "cook_time": 30,
+      "image_url": "20250804_082650.jpg",
+      "notes": "Astuce écrite à la main : possibilité de remplacer le thon par de la truite fumée et courgettes crochues, bien drainées. Ajouter gingembre ou muscade selon goût.",
+      "ingredients": [
+        { "name": "Courgettes", "quantity": 3, "unit": null, "component_id": null, "sort_order": 1 },
+        { "name": "Œufs", "quantity": 4, "unit": null, "component_id": null, "sort_order": 2 },
+        { "name": "Crème liquide", "quantity": 40, "unit": "cl", "component_id": null, "sort_order": 3 },
+        { "name": "Lait", "quantity": 40, "unit": "cl", "component_id": null, "sort_order": 4 },
+        { "name": "Thon au naturel en boîte", "quantity": 320, "unit": "g", "component_id": null, "sort_order": 5 },
+        { "name": "Fleur de maïs (Maïzena)", "quantity": 20, "unit": "g", "component_id": null, "sort_order": 6 },
+        { "name": "Sel", "quantity": null, "unit": null, "component_id": null, "sort_order": 7 },
+        { "name": "Poivre", "quantity": null, "unit": null, "component_id": null, "sort_order": 8 }
+      ],
+      "steps": [
+        { "step_number": 1, "instruction": "Préchauffez le four à 180°C. Lavez les courgettes et émincez-les en fines rondelles. Égouttez le thon et détaillez-le en morceaux.", "component_id": null },
+        { "step_number": 2, "instruction": "Beurrez 6 ramequins ou cassolettes. Répartissez-y les courgettes et parsemez-les de thon.", "component_id": null },
+        { "step_number": 3, "instruction": "Délayez la fleur de maïs avec le lait dans un saladier. Ajoutez la crème liquide, les œufs entiers, salez, poivrez et fouettez le tout.", "component_id": null },
+        { "step_number": 4, "instruction": "Versez la préparation sur les courgettes et le thon. Enfournez pour 25 à 30 minutes selon l’épaisseur des ramequins. Servez chaud directement dans les ramequins.", "component_id": null }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Pomelo farci aux crevettes roses",
+      "category": "Entrée",
+      "servings": 4,
+      "oven_temperature": null,
+      "cook_time": null,
+      "image_url": "20250804_083043.jpg",
+      "notes": null,
+      "ingredients": [
+        { "name": "Crevettes roses cuites", "quantity": 250, "unit": "g", "component_id": null, "sort_order": 1 },
+        { "name": "Pomelos", "quantity": 4, "unit": null, "component_id": null, "sort_order": 2 },
+        { "name": "Avocats", "quantity": 2, "unit": null, "component_id": null, "sort_order": 3 },
+        { "name": "Cœurs de salade", "quantity": 2, "unit": null, "component_id": null, "sort_order": 4 },
+        { "name": "Persil frisé", "quantity": 1, "unit": "botte", "component_id": null, "sort_order": 5 },
+        { "name": "Huile d’olive", "quantity": 4, "unit": "c. à soupe", "component_id": null, "sort_order": 6 }
+      ],
+      "steps": [
+        { "step_number": 1, "instruction": "Coupez les pomelos en 2 demi-sphères puis découpez chacun en quartiers. Décortiquez les crevettes.", "component_id": null },
+        { "step_number": 2, "instruction": "Épluchez les avocats et découpez-les délicatement en morceaux. Effeuillez les cœurs de salade et ciselez le persil.", "component_id": null },
+        { "step_number": 3, "instruction": "Disposez les feuilles de salade au fond des coques de pomelos. Ajoutez les quartiers de fruit, les morceaux d’avocat et les crevettes. Parsemez de persil et filetez d’huile d’olive, puis servez bien frais.", "component_id": null }
+      ]
+    }
+  ]
+}

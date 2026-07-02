@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une recette - Les recettes de maman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 10C5 7.79086 6.79086 6 9 6H15C17.2091 6 19 7.79086 19 10V11.5C19 15.6421 15.6421 19 11.5 19H10.5C7.46243 19 5 16.5376 5 13.5V10Z" stroke="currentColor" stroke-width="1.8"></path>
+                        <path d="M8 9.5H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                        <path d="M9.5 13H14.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                        <path d="M12 4V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Les recettes de maman</span>
+                    <span class="logo-subtitle">Ajouter une recette</span>
+                </div>
+            </a>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="add-recipe.html" class="active">Ajouter</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-page">
+            <form id="recipe-form" class="recipe-form">
+                <!-- Section 1: Infos générales -->
+                <div class="form-section">
+                    <h2 class="form-section-title">Informations générales</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="title">Titre de la recette *</label>
+                            <input type="text" id="title" name="title" required placeholder="Ex: Tarte au citron meringuée">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Catégorie *</label>
+                            <select id="category" name="category" required>
+                                <option value="" disabled selected>Sélectionnez une catégorie</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="servings">Nombre de portions</label>
+                            <input type="number" id="servings" name="servings" min="1" placeholder="Ex: 6">
+                        </div>
+                        <div class="form-group">
+                            <label for="cook_time">Temps de cuisson (min)</label>
+                            <input type="number" id="cook_time" name="cook_time" min="0" placeholder="Ex: 40">
+                        </div>
+                        <div class="form-group">
+                            <label for="oven_temperature">Température du four</label>
+                            <input type="text" id="oven_temperature" name="oven_temperature" placeholder="Ex: 180°C">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="image_url">URL de l'image (optionnel)</label>
+                            <input type="url" id="image_url" name="image_url" placeholder="Ex: https://exemple.com/image.jpg">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="notes">Notes ou conseils</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Ex: Laissez refroidir avant de servir..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Ingrédients -->
+                <div class="form-section">
+                    <h2 class="form-section-title">Ingrédients</h2>
+                    <div id="ingredients-container" class="dynamic-list">
+                        <!-- Les ingrédients seront ajoutés ici dynamiquement -->
+                    </div>
+                    <button type="button" class="add-btn" id="add-ingredient-btn">
+                        <i class="fas fa-plus-circle"></i> Ajouter un ingrédient
+                    </button>
+                </div>
+
+                <!-- Section 3: Étapes -->
+                <div class="form-section">
+                    <h2 class="form-section-title">Étapes de préparation</h2>
+                    <div id="steps-container" class="dynamic-list">
+                        <!-- Les étapes seront ajoutées ici dynamiquement -->
+                    </div>
+                    <button type="button" class="add-btn" id="add-step-btn">
+                        <i class="fas fa-plus-circle"></i> Ajouter une étape
+                    </button>
+                </div>
+
+                <!-- Boutons d'action -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Enregistrer la recette
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        <i class="fas fa-undo"></i> Réinitialiser
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Les recettes de maman | Un projet familial pour partager les saveurs.</p>
+    </footer>
+
+    <script src="js/add-recipe.js"></script>
+</body>
+</html>

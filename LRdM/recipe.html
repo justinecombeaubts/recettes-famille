@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recette - Les recettes de maman</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Recette : <span id="recipe-title"></span></h1>
+        <a href="index.html">Retour à la liste</a>
+    </header>
+
+    <main>
+        <div id="recipe-details">
+            <p><strong>Catégorie :</strong> <span id="recipe-category"></span></p>
+            <p><strong>Temps de cuisson :</strong> <span id="recipe-cook-time"></span> min</p>
+            <p><strong>Portions :</strong> <span id="recipe-servings"></span></p>
+            <p id="recipe-notes"></p>
+
+            <h3>Ingrédients</h3>
+            <ul id="recipe-ingredients"></ul>
+
+            <h3>Étapes</h3>
+            <ol id="recipe-steps"></ol>
+        </div>
+    </main>
+
+    <script src="js/recipe.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les recettes de maman</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Les recettes de maman</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Recettes</a>
+            <a href="./add-recipe.html">Ajouter une recette</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dans index.html, ajoutez ceci avant la liste des recettes -->
+        <input type="text" id="search-input" placeholder="Rechercher une recette...">
+        <button onclick="searchRecipes()">Rechercher</button>
+
+        <script>
+            function searchRecipes() {
+                const query = document.getElementById('search-input').value.toLowerCase();
+                const recipeCards = document.querySelectorAll('.recipe-card');
+
+                recipeCards.forEach(card => {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    if (title.includes(query)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+        <section id="recipes-list">
+            <h2>Nos recettes</h2>
+            <div id="recipes-container"></div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
