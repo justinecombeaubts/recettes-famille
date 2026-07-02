@@ -14,6 +14,8 @@
 
 Ce projet est conçu pour être utilisé localement ou hébergé sur un serveur web.
 
+⚠️ **Note importante** : Le code source partagé ici ne contient **pas l'intégralité des recettes familiales**, car celles-ci sont des **secrets de famille** et ne doivent pas être rendus publics. Seules les structures de base et quelques exemples sont inclus.
+
 ---
 
 ## 🛠️ Structure du projet
